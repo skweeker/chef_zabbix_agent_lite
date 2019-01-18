@@ -18,7 +18,7 @@ when 'windows'
   default['zabbix']['agent']['service_name'] = 'Zabbix Agent'
 
   default['zabbix']['agent']['config']['LogFile'] = 'c:\zabbix_agentd.log'
-when 'debian', 'rhel'
+when 'debian', 'rhel', 'amazon'
   # https://repo.zabbix.com/zabbix/
   # The repo version to install
   # The explicit version of the agent to install
